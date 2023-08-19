@@ -1,4 +1,5 @@
 {
+  "homepage": "https://vijayarajsvr.github.io/WebStarter",
   "name": "webstarter",
   "version": "0.1.0",
   "private": true,
@@ -16,8 +17,15 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
+    "clean": "gh-pages-clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
