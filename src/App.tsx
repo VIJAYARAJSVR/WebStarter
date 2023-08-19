@@ -25,6 +25,10 @@ function App() {
 
         const interval = setInterval(() => {
             let newvalue = Seconds - 1;
+            if(newvalue===0)
+            {
+                newvalue = default_count_starts
+            }
             setSeconds(newvalue);
         }, 1000);
         return () => clearInterval(interval);
