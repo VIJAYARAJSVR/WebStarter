@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "css_card_color": "card1",
+    "inner_card_color": "inner_card1",
+    "name": "Portfolio",
+    "website": "https://vijayarajsvr.github.io/Portfolio/",
+    "image": "Database",
+    "content": [
+      "Projects i worked",
+      "Professional Experience",
+      "Technical skill details",
+      "Certification i have earned",
+      "Dashboard and Contacts",
+      "Companies I done projects"
+    ]
+
+  },
+  {
+    "id": 2,
+    "css_card_color": "card2",
+    "inner_card_color": "inner_card2",
+    "name": "Blog",
+    "website": "https://vijayarajsvr.github.io/Personal/",
+    "image": "Database",
+    "content": [
+      "Technical post",
+      "General Guidelines",
+      "Product Recommendation",
+      "Tips & Tricks",
+      "Technical Cheatsheet",
+      "Software Comparison"
+    ]
+  },
+  {
+    "id": 3,
+    "css_card_color": "card3",
+    "inner_card_color": "inner_card3",
+    "name": "Personal",
+    "website": "https://vijayarajsvr.github.io/Blog/",
+    "image": "Database",
+    "content": [
+      "Photos",
+      "Videos",
+      "Passion",
+      "Tour",
+      "Hobbies",
+      "About Me"
+    ]
+  }
+]

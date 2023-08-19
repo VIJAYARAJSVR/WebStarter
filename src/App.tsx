@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+
+import WebsiteCard from "./component/WebsiteCard";
+import {useEffect, useState} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [Seconds, setSeconds] = useState(10);
+
+    const defaulturl = "https://vijayarajsvr.github.io/Portfolio/";
+
+    useEffect(() => {
+
+        setTimeout(() => {
+            // window.location.href = defaulturl;
+        }, 10000);
+
+    }, []);
+
+
+    useEffect(() => {
+
+        const interval = setInterval(() => {
+            let newvalue = Seconds - 1;
+            setSeconds(newvalue);
+        }, 1000);
+        return () => clearInterval(interval);
+
+    }, [Seconds]);
+
+
+    return (
+        <div className="container mt-5 text-center">
+
+            <h1 className="mb-5 mt-5"> Thank you for your interest</h1>
+
+            <div className={"row mt-5"}>
+                <div className={"col-3"}></div>
+                <div className={"col-6"}>
+                    <h4 className={"text-warning"}> Please click any of the below link (card). </h4>
+                </div>
+                <div className={"col-2 text-white-50 fs-3 fw-semibold"}>{Seconds} sec</div>
+            </div>
+
+            <WebsiteCard/>
+
+        </div>
+    );
 }
 
 export default App;
+
