@@ -4,15 +4,19 @@ import WebsiteCard from "./component/WebsiteCard";
 import {useEffect, useState} from "react";
 
 function App() {
-    const [Seconds, setSeconds] = useState(10);
+
 
     const defaulturl = "https://vijayarajsvr.github.io/Portfolio/";
+    const default_delay = 5000;
+    const default_count_starts = 5;
+
+    const [Seconds, setSeconds] = useState(default_count_starts);
 
     useEffect(() => {
 
         setTimeout(() => {
-            // window.location.href = defaulturl;
-        }, 10000);
+            window.location.href = defaulturl;
+        }, default_delay);
 
     }, []);
 
