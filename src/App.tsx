@@ -7,8 +7,8 @@ function App() {
 
 
     const defaulturl = "https://vijayarajsvr.github.io/Portfolio/";
-    const default_delay = 5000;
-    const default_count_starts = 5;
+    const default_delay = 3000;
+    const default_count_starts = 3;
 
     const [Seconds, setSeconds] = useState(default_count_starts);
 
