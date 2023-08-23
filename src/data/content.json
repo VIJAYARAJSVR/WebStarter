@@ -21,7 +21,7 @@
     "css_card_color": "card2",
     "inner_card_color": "inner_card2",
     "name": "Blog",
-    "website": "https://vijayarajsvr.github.io/Personal/",
+    "website": "https://vijayarajsvr.github.io/Blog/",
     "image": "Database",
     "content": [
       "Technical post",
@@ -37,7 +37,7 @@
     "css_card_color": "card3",
     "inner_card_color": "inner_card3",
     "name": "Personal",
-    "website": "https://vijayarajsvr.github.io/Blog/",
+    "website": "https://vijayarajsvr.github.io/Personal/",
     "image": "Database",
     "content": [
       "Photos",
